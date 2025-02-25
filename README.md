@@ -1,3 +1,9 @@
-The aim of this work is to train a model that predicts the gender of people from the texts they write or from their transcribed speech. For this, I am training a model using the [samzirbo/europarl.en-es.gendered](https://huggingface.co/datasets/samzirbo/europarl.en-es.gendered) dataset. The dataset is a completely structured dataset. I also use microsoft's deberta-v3-large transformers model for training.
+I am working on a gender classification model that i think can be used for more than one objectives. For this, I am training a model using the [samzirbo/europarl.en-es.gendered](https://huggingface.co/datasets/samzirbo/europarl.en-es.gendered) dataset. The dataset is a completely structured dataset. I also use microsoft's deberta-v3-large transformers model for training.
 
-In addition to the model I will train; this model can be expanded for informal and unstructred language used in social media by creating an unstructred dataset with web scrapping and fine-tuning this model. But since the dataset contains more than 700,000 rows even after removing the neutral label, i think we will need an unstructured informal english dataset with at least that many rows. Once we have done this, we can create a model that can recognize common word patterns and relationships between different genders that a human being may not consciously recognize.
+The objectives for which I think it can be used:
+
+Objective 1 is to identify common word patterns between the same genders that the human mind is not consciously aware of.
+
+Objective 2 to identify differences between the issues prioritized by male and female politicians in the European Parliament.
+
+Objective 3 Gender prediction for articles/text with unknown speaker and author.
