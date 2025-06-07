@@ -73,12 +73,14 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import torch.nn.functional as F
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 model_name = "fc63/gender_prediction_model_from_text"
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
-model = AutoModelForSequenceClassification.from_pretrained(model_name).eval().to("cuda")
+model = AutoModelForSequenceClassification.from_pretrained(model_name).eval().to(device)
 
 def predict(text):
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True, max_length=128).to("cuda")
+    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True, max_length=128).to(device)
     with torch.no_grad():
         outputs = model(**inputs)
         probs = F.softmax(outputs.logits, dim=1)
