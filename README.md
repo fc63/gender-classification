@@ -117,38 +117,39 @@ The Jupyter notebooks in the [GitHub repository](https://github.com/fc63/gender-
 
 5. **Lehçe Dataset Creation**  
    ➤ [`lehce1.ipynb`](https://github.com/fc63/gender-classification/blob/main/lehce%20dataset/lehce1.ipynb)
+   ➤ [`lehce dataset`](https://github.com/fc63/gender-classification/tree/main/lehce%20dataset) (the resulting dataset is here as pickle, but I changed the name. otherwise it is the same dataset.)
 
-6. **Lehçe → English Translation**  
+7. **Lehçe → English Translation**  
    ➤ [`lehce-eng.ipynb`](https://github.com/fc63/gender-classification/blob/main/pl%20to%20eng%20translate/lehce-eng.ipynb)
 
-7. **Russian Dataset Creation**  
+8. **Russian Dataset Creation**  
    ➤ [`rus_gender.ipynb`](https://github.com/fc63/gender-classification/blob/main/rus_gender/rus_gender.ipynb)
 
-8. **Russian → English Translation**  
+9. **Russian → English Translation**  
    ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/rus_translate/1.ipynb)
 
-9. **NPTEL Dataset Preprocessing**  
+10. **NPTEL Dataset Preprocessing**  
    ➤ [`nptel.ipynb`](https://github.com/fc63/gender-classification/blob/main/nptel%20dataset/nptel.ipynb)
 
-10. **Combining Lehçe + Russian + NPTEL**  
+11. **Combining Lehçe + Russian + NPTEL**  
     ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/combined_3_datasets/1.ipynb)
 
-11. **Blog Dataset (XML → Pickle)**  
+12. **Blog Dataset (XML → Pickle)**  
     ➤ [`g_blogs.ipynb`](https://github.com/fc63/gender-classification/blob/main/g_blogs/g_blogs.ipynb)
 
-12. **Blog Dataset Cleaning & Merging with 3 Datasets**  
+13. **Blog Dataset Cleaning & Merging with 3 Datasets**  
     ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/combine_informal/1.ipynb)
 
-13. **Merging EuroParl + Combined Informal Dataset**  
+14. **Merging EuroParl + Combined Informal Dataset**  
     ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/mergealldatasets/1.ipynb)
 
-14. **Evaluation of Model Step 24750**  
+15. **Evaluation of Model Step 24750**  
     ➤ [`model24750.ipynb`](https://github.com/fc63/gender-classification/blob/main/Evaluate/model24750.ipynb)
 
-15. **Phase 2: Fine-tuning on Merged Dataset**  
+16. **Phase 2: Fine-tuning on Merged Dataset**  
     ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/gpmodel_v3/1.ipynb)
 
-16. **Evaluation of Fine-tuned Final Model (gp_modelv3)**  
+17. **Evaluation of Fine-tuned Final Model (gp_modelv3)**  
     ➤ [`modelv3.ipynb`](https://github.com/fc63/gender-classification/blob/main/Evaluate/modelv3.ipynb)
 
 🧠 **Note:** The final published model on Hugging Face is the one fine-tuned in step 15 and referred to as `gp_modelv3`.
