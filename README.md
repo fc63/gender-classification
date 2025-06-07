@@ -96,6 +96,65 @@ Female (Confidence: 84.1%)
 
 ---
 
+## 📂 Execution Order & Source Code
+
+To reproduce the results, it is recommended to run the code in **Google Colab** and **mount your Google Drive**.  
+You will need access to the `datasets/` and `models/` folders inside your Drive, which contain preprocessed `.pkl` files and trained checkpoints.  
+If you don't have these, you can request them from the author.
+
+The Jupyter notebooks in the [GitHub repository](https://github.com/fc63/gender-classification) are designed to be run in the following order:
+
+1. **EuroParl Dataset Normalization**  
+   ➤ [`europarl_normalized.ipynb`](https://github.com/fc63/gender-classification/blob/main/europarl_normalized/europarl_normalized.ipynb)
+
+2. **Learning Rate Finder on Normalized EuroParl**  
+   ➤ [`lrfinder.ipynb`](https://github.com/fc63/gender-classification/blob/main/lr_finder/lrfinder.ipynb)
+
+3. **Training on Normalized Dataset (First Model)**  
+   ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/gp_model_first_3_epoch/1.ipynb)
+
+4. **Best model at step 24750 saved to Drive**
+
+5. **Lehçe Dataset Creation**  
+   ➤ [`lehce1.ipynb`](https://github.com/fc63/gender-classification/blob/main/lehce%20dataset/lehce1.ipynb)
+
+6. **Lehçe → English Translation**  
+   ➤ [`lehce-eng.ipynb`](https://github.com/fc63/gender-classification/blob/main/pl%20to%20eng%20translate/lehce-eng.ipynb)
+
+7. **Russian Dataset Creation**  
+   ➤ [`rus_gender.ipynb`](https://github.com/fc63/gender-classification/blob/main/rus_gender/rus_gender.ipynb)
+
+8. **Russian → English Translation**  
+   ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/rus_translate/1.ipynb)
+
+9. **NPTEL Dataset Preprocessing**  
+   ➤ [`nptel.ipynb`](https://github.com/fc63/gender-classification/blob/main/nptel%20dataset/nptel.ipynb)
+
+10. **Combining Lehçe + Russian + NPTEL**  
+    ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/combined_3_datasets/1.ipynb)
+
+11. **Blog Dataset (XML → Pickle)**  
+    ➤ [`g_blogs.ipynb`](https://github.com/fc63/gender-classification/blob/main/g_blogs/g_blogs.ipynb)
+
+12. **Blog Dataset Cleaning & Merging with 3 Datasets**  
+    ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/combine_informal/1.ipynb)
+
+13. **Merging EuroParl + Combined Informal Dataset**  
+    ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/mergealldatasets/1.ipynb)
+
+14. **Evaluation of Model Step 24750**  
+    ➤ [`model24750.ipynb`](https://github.com/fc63/gender-classification/blob/main/Evaluate/model24750.ipynb)
+
+15. **Phase 2: Fine-tuning on Merged Dataset**  
+    ➤ [`1.ipynb`](https://github.com/fc63/gender-classification/blob/main/gpmodel_v3/1.ipynb)
+
+16. **Evaluation of Fine-tuned Final Model (gp_modelv3)**  
+    ➤ [`modelv3.ipynb`](https://github.com/fc63/gender-classification/blob/main/Evaluate/modelv3.ipynb)
+
+🧠 **Note:** The final published model on Hugging Face is the one fine-tuned in step 15 and referred to as `gp_modelv3`.
+
+---
+
 ## 👨‍🔬 Author & License
 
 **Author**: Furkan Çoban  
