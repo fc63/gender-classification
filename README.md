@@ -1,6 +1,6 @@
 # Gender Prediction from Text ✍️ → 👩‍🦰👨
 
-This model predicts the **gender of the author** based on a given English or non-English text. It is built upon [DeBERTa-v3-large](https://huggingface.co/microsoft/deberta-v3-large) and fine-tuned on a diverse, multilingual, and multi-domain dataset with both formal and informal texts.
+This model **predicts** the likely **gender** of an anonymous speaker or writer based solely on the content of an English text. It is built upon [DeBERTa-v3-large](https://huggingface.co/microsoft/deberta-v3-large) and fine-tuned on a diverse, multilingual, and multi-domain dataset with both formal and informal texts.
 
 📍 **Space link**: [🔗 Try it out on Hugging Face Spaces](https://huggingface.co/spaces/fc63/Gender_Prediction)  
 📁 **Model repo**: [🔗 View on Hugging Face Hub](https://huggingface.co/fc63/gender_prediction_model_from_text)  
