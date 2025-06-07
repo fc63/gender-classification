@@ -20,6 +20,8 @@ This model **predicts** the likely **gender** of an anonymous speaker or writer 
   - Precision: 0.69
   - Recall: 0.69
 
+📂 **Evaluation**: [View on Notebook](https://github.com/fc63/gender-classification/blob/main/Evaluate/modelv3.ipynb)
+
 ---
 
 ## 🧾 Datasets Used
