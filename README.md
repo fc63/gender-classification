@@ -1,3 +1,4 @@
+
 # Gender Prediction from Text ✍️ → 👩‍🦰👨
 
 This model **predicts** the likely **gender** of an anonymous speaker or writer based solely on the content of an English text. It is built upon [DeBERTa-v3-large](https://huggingface.co/microsoft/deberta-v3-large) and fine-tuned on a diverse, multilingual, and multi-domain dataset with both formal and informal texts.
@@ -157,6 +158,21 @@ The Jupyter notebooks in the [GitHub repository](https://github.com/fc63/gender-
     ➤ [`modelv3.ipynb`](https://github.com/fc63/gender-classification/blob/main/Evaluate/modelv3.ipynb)
 
 🧠 **Note:** The final published model on Hugging Face is the one fine-tuned in step 15 and referred to as `gp_modelv3`.
+
+---
+
+## 📌 Future Work & Limitations
+
+
+I do not want to leave this model at the level of 0.69 accuracy and F1 score.
+
+As far as I can detect at this point, there is a bias towards predicting emotional, psychological, and introspective texts as female. Similarly, more direct and result-oriented writings are also often predicted as male. Therefore, a large, carefully labeled dataset that reflects the opposite of this pattern is needed.
+
+The datasets used to train this model had to be obtained from open-source platforms, which limited the range of accessible data.
+
+To make further progress, I need to create and label a larger dataset myself — which requires a significant amount of time, effort, and cost.
+
+Before moving to dataset creation, I plan to try a few more approaches using the current dataset. So far, alternative techniques have not helped improve the scores without causing overfitting. After testing a few more methods, if none work, the only step left will be building a new dataset — and that will likely be the point where I stop development, as it will be both labor-intensive and costly for me.
 
 ---
 
